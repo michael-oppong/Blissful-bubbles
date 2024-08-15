@@ -1,0 +1,123 @@
+:root {
+    --light_slate: #334155;
+    --amber_400 : #fbbf24;
+    --lime_500 : #84cc16;
+    --cyan_400:#22d3ee;
+    --blue_600 : #2563eb;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'poppins',Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #262626;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.container {
+    border: 3px solid red;
+    width: 100%;
+    max-width: 90%;
+    margin-inline: auto;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.50rem;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.navbar ul li a {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.navbar ul li a:hover {
+    color: #1e90ff;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* MEDIA FOR SMALL SCREEN SIZE */
+@media (max-width:600px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+        padding-top: 20px;
+    }
+
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
