@@ -87,11 +87,11 @@ nav a {
 
 .cta {
     text-decoration: none;
-    background-color: var(--blue_600);
+    background-color:  blue;
     padding: 10px 20px;
     border-radius: 10px;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .cta:hover{
@@ -116,7 +116,7 @@ nav a {
 }
 
 .contact {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .difference {
@@ -217,10 +217,15 @@ img {
 
 .service {
     background-color: var(--amber_400);
-    height: 100px;
-    padding: 100px 0px;
+    text-align: justify;
+    height: 200px;
+    padding: 30px 0px;
+    font-size: 1.3rem;
 }
 
+.service_description {
+    margin-top: 20px;
+}
 footer {
     background-color: #808080;
     padding: 20px 0;
@@ -322,5 +327,13 @@ a.email {
         flex-direction: column;
         gap: 50px;
         text-align: center;
+    }
+
+    .service {
+        background-color: var(--amber_400);
+        text-align: justify;
+        height: 200px;
+        padding: 30px 0px;
+        font-size: 1.3rem;
     }
 }
