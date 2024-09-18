@@ -210,18 +210,12 @@ img {
     padding: 5px;
     font-size: 1.2rem;
     text-transform: capitalize;
-    color: #00008b;
-    display: inline-block;
-    vertical-align: bottom;
 }
 
-.service {
-    background-color: var(--amber_400);
-    height: 100px;
-    padding: 100px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.navbar ul li a {
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 footer {
