@@ -219,9 +219,6 @@ img {
     background-color: var(--amber_400);
     height: 100px;
     padding: 100px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 footer {
